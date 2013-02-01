@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Mocha Test Reporter</title>
+    <link rel="stylesheet" href="./mocha/mocha.css"/>
+</head>
+<body>
+    <!-- Required for browser reporter -->
+    <div id="mocha"></div>
+    
+    <!-- mocha -->
+    <script src="./mocha/mocha.js"></script>
+    <script>
+        // This will be overridden by mocha-helper if you run with grunt
+        mocha.setup('bdd');
+    </script>
+    
+    <!--
+         IMPORTANT
+         If you are not using AMD, you must include the mocha-helper.js file
+         included in the tasks/mocha folder after you include mocha.js
+         Unfortunately, I can't figure out a reliable way to inject the grunt
+         runner after mocha.js but before mocha.run in PhantomJS
+         
+    -->
+    <script src="./mocha/mocha-helper.js"></script>
+    <!--https://github.com/LearnBoost/expect.js-->
+    <script src="./mocha/expect.js"></script>
+    <!-- Include anything you want to test -->
+    <script src="../samplejs/sample.js"></script>
+    <script src="sample-test.js"></script>
+    <!-- run mocha -->
+    <script type="text/javascript" charset="utf-8">
+        mocha.run();
+    </script>
+</body>
+</html>
