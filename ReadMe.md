@@ -1,18 +1,18 @@
 # grunt mocha browser test seed
 
-This project is a seed for testing front side js with [mocha](http://visionmedia.github.com/mocha/) framework under [Grunt](http://gruntjs.com/). 
+This project is a seed for testing front side js by using [mocha](http://visionmedia.github.com/mocha/) framework with [Grunt](http://gruntjs.com/) in browser or [Phantomjs](http://phantomjs.org/). 
 
-So to run this project, [grunt](https://github.com/gruntjs/grunt/tree/0.3-stable) need be installed & [Phantomjs](http://phantomjs.org/) also need be installed
+So to run this project, [grunt](https://github.com/gruntjs/grunt/tree/0.3-stable) & [Phantomjs](http://phantomjs.org/) need be installed.
 
 ## install
 
 ```
-1. clone the project
+1. git clone https://github.com/wen-bing/mocha-browser-test-seed.git
 2. npm install
 3. grunt
 ```
 
-## usage
+## integration
 
 - copy test folder to your project dir
 
